@@ -10,7 +10,13 @@
 }
 
 .certifications_box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .certifications_box {
+        grid-template-columns: auto;
+    }
 }
